@@ -9,7 +9,7 @@ namespace OpenTelemetry.Instrumentation.Wcf_bug
 		public static void Main(string[] args)
 		{
 			var binding = new NetTcpBinding(SecurityMode.TransportWithMessageCredential);
-			binding.TransferMode = TransferMode.Buffered;
+			binding.TransferMode = TransferMode.Streamed;
 			binding.Security.Transport.ProtectionLevel = ProtectionLevel.EncryptAndSign;
 			binding.Security.Message.ClientCredentialType = MessageCredentialType.Windows;
 			
