@@ -44,7 +44,6 @@
 		<Compile Include="Properties\AssemblyInfo.cs"/>
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="OpenTelemetry" Version="1.6.0" />
 	  <PackageReference Include="OpenTelemetry.Instrumentation.Wcf" Version="1.0.0-rc.12" />
 	</ItemGroup>
 	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
